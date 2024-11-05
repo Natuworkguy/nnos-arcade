@@ -1,6 +1,6 @@
 # Security Policy
 
-At NNOS Device Simulator, we prioritize the security of our users and their devices. We are committed to identifying and resolving any potential security vulnerabilities to ensure a safe and secure environment for our application.
+At The Nathan Network, we prioritize the security of our users and their devices. We are committed to identifying and resolving any potential security vulnerabilities to ensure a safe and secure environment for our application.
 
 ## Supported Versions
 
