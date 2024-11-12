@@ -3,13 +3,12 @@
 
 # NNOS Arcade
 
-This is a simple device interface using MakeCode JavaScript, featuring a lock screen, an unlock mechanism, app buttons, and incoming call functionality. The main features include interactive buttons, sound effects, and lock/unlock behavior.
+This is a simple device interface using MakeCode JavaScript, featuring a lock screen, an unlock mechanism, and Apps. The main features include interactive buttons, sound effects, and lock/unlock behavior.
 
 ## Features
 
 - **Device Lock and Unlock**: The device can be locked and unlocked with specific button combinations.The default is a+b 
 - **Toons App Simulation**: Clicking the "Toons" button will play ambient computer noise.
-- **Incoming Calls**: An incoming call will play a ringtone, and the user can dismiss it by locking the device.
 - **Custom Sprites and Icons**: Lock and app buttons are created as sprites, and the pointer can interact with them.
   
 ## Controls
@@ -60,8 +59,7 @@ To edit this repository in MakeCode.
 
 ## Future Enhancements
 
-- Add more apps and functionality to the app buttons.
-- Implement a hang-up button for incoming calls.
+- Add more apps.
 - Expand the UI with non-interactive icons for aesthetics.
 
 ## To get a demonstration of the software:
