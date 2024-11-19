@@ -51,16 +51,14 @@ function unlockDevice () {
         toonsBtn = sprites.create(assets.image`toonsIcon`, SpriteKind.toonsBtn_Kind)
         console.log("[NNOS INFO]: Created toonsBtn")
         toonsBtn.setPosition(20, 50)
-console.log("[NNOS INFO]: Modified position for toonsBtn")
+        console.log("[NNOS INFO]: Modified position for toonsBtn")
     }
 }
-controller.combos.attachCombo(unlockCombo, function () {
+controller.combos.attachCombo('a+b', function () { // Change unlock combo here
     unlockDevice()
 })
 let toonsBtn: Sprite = null
 let lockBtn: Sprite = null
 let Pointer: Sprite = null
 let Locked = 0
-let unlockCombo = ""
-unlockCombo = "a+b"
 lockDevice()
