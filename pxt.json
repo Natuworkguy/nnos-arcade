@@ -1,6 +1,5 @@
 {
     "name": "NNOS Arcade V2.0",
-    "version": "0.0.1",
     "description": "",
     "dependencies": {
         "device": "*",
@@ -28,5 +27,5 @@
     "supportedTargets": [
         "arcade"
     ],
-    "preferredEditor": "tsprj"
+    "preferredEditor": "blocksprj"
 }

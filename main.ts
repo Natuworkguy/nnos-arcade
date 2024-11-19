@@ -34,6 +34,10 @@ function destroyIcons () {
     sprites.destroy(lockBtn)
     sprites.destroy(toonsBtn)
 }
+controller.combos.attachCombo("a+b", function () {
+    // Change unlock combo here
+    unlockDevice()
+})
 function unlockDevice () {
     if (Locked == 1) {
         console.log("[NNOS INFO]: Device has been unlocked.")
@@ -54,9 +58,6 @@ function unlockDevice () {
         console.log("[NNOS INFO]: Modified position for toonsBtn")
     }
 }
-controller.combos.attachCombo('a+b', function () { // Change unlock combo here
-    unlockDevice()
-})
 let toonsBtn: Sprite = null
 let lockBtn: Sprite = null
 let Pointer: Sprite = null
