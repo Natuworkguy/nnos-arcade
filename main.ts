@@ -26,8 +26,15 @@ sprites.onOverlap(SpriteKind.Pointer_Kind, SpriteKind.LockBtn_Kind, function (sp
 })
 function openToonsApp () {
     console.log("[NNOS SERVICES/toons]: Playing computer noises ambiance")
-    while (true) {
-        music.play(music.randomizeSound(music.createSoundEffect(WaveShape.Noise, 5000, 0, 255, 0, 500, SoundExpressionEffect.None, InterpolationCurve.Linear)), music.PlaybackMode.UntilDone)
+    if (Music1p == 1) {
+        while (true) {
+            music.play(music.createSong(assets.song`Ringtone`), music.PlaybackMode.UntilDone)
+        }
+    } else {
+        Music1p = 1
+        while (true) {
+            music.play(music.randomizeSound(music.createSoundEffect(WaveShape.Noise, 5000, 0, 255, 0, 500, SoundExpressionEffect.None, InterpolationCurve.Linear)), music.PlaybackMode.UntilDone)
+        }
     }
 }
 function destroyIcons () {
@@ -35,7 +42,6 @@ function destroyIcons () {
     sprites.destroy(toonsBtn)
 }
 controller.combos.attachCombo("a+b", function () {
-    // Change unlock combo here
     unlockDevice()
 })
 function unlockDevice () {
@@ -60,6 +66,7 @@ function unlockDevice () {
 }
 let toonsBtn: Sprite = null
 let lockBtn: Sprite = null
+let Music1p = 0
 let Pointer: Sprite = null
 let Locked = 0
 lockDevice()
