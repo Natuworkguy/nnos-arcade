@@ -9,7 +9,8 @@ We actively support the latest stable release of our application and continuousl
 | Version | Supported          |
 | ------- | ------------------ |
 | 0.0.0   | :x:                |
-| 0.0.1   | :white_check_mark: |
+| 0.0.1   | :x:                |
+| 0.0.2   | :white_check_mark: |
 
 We recommend that users always update to the latest version to benefit from the latest security improvements and patches. Versions not listed as supported will not receive security updates or fixes.
 
