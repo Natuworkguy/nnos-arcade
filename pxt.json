@@ -1,5 +1,5 @@
 {
-    "name": "NNOS Arcade V2.0",
+    "name": "NNOS Arcade",
     "version": "0.0.2",
     "description": "",
     "dependencies": {
@@ -17,6 +17,7 @@
         "images.g.jres",
         "images.g.ts",
         "main.py"
+        "go.ns"
     ],
     "testFiles": [
         "test.ts"
