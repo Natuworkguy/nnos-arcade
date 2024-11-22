@@ -1,0 +1,7 @@
+#\\import varfunc in var from nsinternals
+var data=(json@javascript(pxt.json/setasvar))
+var file --varfunc {.=(main.(param.get"1"string))}
+var programtouse --varfunc {
+  .=(file("blocks"))\
+    unless (default eq false)
+}
